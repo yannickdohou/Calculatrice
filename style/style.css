@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0a1622;
+}
+
+.calc{
+    width: 25vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.result{
+    width: 100%;
+    height: 17%;
+    background-color: white;
+}
+.btn
+{
+    width: 100%;
+    height: 83%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(1fr, 2fr);
+    background-color: #0e2537;
+}
+
+
+.division{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.multiplication{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.seven{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.eight{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.nine{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.minus{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.four{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.five{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.six{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.plus{
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+
+.equal{
+    background-color: #349aff;
+}
+
+
+.btn > div{
+    display: grid;
+    cursor: pointer;
+}
+.clear{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #ff0066; 
+}
+
+.text
+{
+    align-self: center;
+    justify-self: center;
+    font-size: 3rem;
+}
+
+.result{
+    display: grid;
+    padding-right: 0.5rem;
+}
+
+.res{
+    align-self: center;
+    justify-self: right;
+    font-size: 3rem;
+    color: #0a1622;
+}
+
+
+
+
+
+
